@@ -1,0 +1,6 @@
+恢复窗体的按钮！
+  临时解决办法：
+      metacity --replace &
+    永久解决办法：
+      ~/.local/share/applications/metacity.desktop 注释hidden=true这条语句。
+      ~/.local/share/applications/gnome-wm.desktop 注释hidden=true这条语句。
