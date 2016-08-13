@@ -1,0 +1,17 @@
+gnome 桌面的设置选项.
+
+>gsettings list-schemas    #查看所有schemas
+>gsettings list-recursively  #查看所有key
+>gsettings list-schemas | grep proxy -i     #找到自己想要的设置项 eg.proxy
+>gsettings list-keys org.gnome.system.proxy  #查看找到感兴趣的schemas的keys
+>gsettings get org.gnome.system.proxy mode  #查schemas 对应的key 的值
+>gsettings range org.gnome.system.proxy mode  #通过range命令可以查看key的取值
+>gsettings set org.gnome.system.proxy mode none  # 通过set 可以改变key的值
+
+GNOME 设置HiDPI显示
+   >gsettings set org.gnome.desktop.interface text-scaling-factor {range d 0.5 3.0}
+   
+GNOME 设置系统挂起未活动的超时时间
+   >gsettings get org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout
+   >gsettings range org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout   #type i(随便一个整数都行.)
+   
