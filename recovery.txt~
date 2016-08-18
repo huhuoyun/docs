@@ -34,5 +34,4 @@
 9.计算测试时间估值:
   eg.>smartctl -c /dev/sda
   
-10.显示磁盘错误日志:
-  eg.>smartctl -l error /dev/sda
+10.显示磁盘错误日志
